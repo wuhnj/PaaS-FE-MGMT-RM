@@ -36,21 +36,21 @@ public class PsMntResApplyPeerImpl implements PsMntResApplyPeer {
 	PsResCenterResSvc resCenterResSvc;
 	
 	
-	@Override
+//	@Override
 	public Page<PsMntResApply> queryPage(Integer pageNum, Integer pageSize, CPsMntResApply cdt, String orders) {
 		return mntResApplySvc.queryPage(pageNum, pageSize, cdt, orders);
 	}
 	
 	
 
-	@Override
+//	@Override
 	public List<PsMntResApply> queryList(CPsMntResApply cdt, String orders) {
 		return mntResApplySvc.queryList(cdt, orders);
 	}
 	
 	
 
-	@Override
+//	@Override
 	public PsMntResApply queryById(Long id) {
 		BinaryUtils.checkEmpty(id, "id");
 		return mntResApplySvc.queryById(id);
@@ -91,7 +91,7 @@ public class PsMntResApplyPeerImpl implements PsMntResApplyPeer {
 	
 	
 	
-	@Override
+//	@Override
 	public Page<MntResApplyInfo> queryInfoPage(Integer pageNum, Integer pageSize, CPsMntResApply cdt, String orders) {
 		Page<PsMntResApply> page = queryPage(pageNum, pageSize, cdt, orders);
 		List<PsMntResApply> ls = page.getData();
@@ -101,7 +101,7 @@ public class PsMntResApplyPeerImpl implements PsMntResApplyPeer {
 
 
 
-	@Override
+//	@Override
 	public List<MntResApplyInfo> queryInfoList(CPsMntResApply cdt, String orders) {
 		List<PsMntResApply> ls = queryList(cdt, orders);
 		return fillApplyInfo(ls);
@@ -109,7 +109,7 @@ public class PsMntResApplyPeerImpl implements PsMntResApplyPeer {
 
 
 
-	@Override
+//	@Override
 	public MntResApplyInfo queryInfoById(Long id) {
 		BinaryUtils.checkEmpty(id, "id");
 		PsMntResApply p = queryById(id);
@@ -124,7 +124,7 @@ public class PsMntResApplyPeerImpl implements PsMntResApplyPeer {
 	
 	
 
-	@Override
+//	@Override
 	public void checkApply(Long id, Boolean pass, String checkDesc) {
 		BinaryUtils.checkEmpty(id, "id");
 		BinaryUtils.checkEmpty(pass, "pass");

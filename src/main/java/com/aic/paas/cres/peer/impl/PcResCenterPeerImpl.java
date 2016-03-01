@@ -31,20 +31,20 @@ public class PcResCenterPeerImpl implements PcResCenterPeer{
 	}
 	
 	
-	@Override
+//	@Override
 	public Page<PcResCenterInfo> queryInfoPage(Integer pageNum, Integer pageSize, CPcResCenter cdt, String orders) {
 		return pcResCenterSvc.queryInfoPage(pageNum, pageSize, cdt, orders);
 	}
 
 	
-	@Override
+//	@Override
 	public List<PcResCenterInfo> queryInfoList(CPcResCenter cdt, String orders) {
 		return pcResCenterSvc.queryInfoList(cdt, orders);
 	}
 
 	
 	
-	@Override
+//	@Override
 	public PcResCenterInfo queryInfoById(Long id) {
 		return pcResCenterSvc.queryInfoById(id);
 	}

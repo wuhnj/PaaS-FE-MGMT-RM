@@ -18,28 +18,28 @@ public class PcImageRepositoryPeerImpl implements PcImageRepositoryPeer {
 	PcImageRepositorySvc imageRespSvc;
 	
 
-	@Override
+//	@Override
 	public Page<PcImageRepository> queryPage(Integer pageNum, Integer pageSize, CPcImageRepository cdt, String orders) {
 		return imageRespSvc.queryPage(pageNum, pageSize, cdt, orders);
 	}
 	
 	
 
-	@Override
+//	@Override
 	public List<PcImageRepository> queryList(CPcImageRepository cdt, String orders) {
 		return imageRespSvc.queryList(cdt, orders);
 	}
 	
 	
 
-	@Override
+//	@Override
 	public PcImageRepository queryById(Long id) {
 		return imageRespSvc.queryById(id);
 	}
 	
 	
 
-	@Override
+//	@Override
 	public Long saveOrUpdate(PcImageRepository record) {
 		BinaryUtils.checkEmpty(record, "record");
 		
@@ -64,7 +64,7 @@ public class PcImageRepositoryPeerImpl implements PcImageRepositoryPeer {
 	
 	
 
-	@Override
+//	@Override
 	public int removeById(Long id) {
 		return imageRespSvc.removeById(id);
 	}

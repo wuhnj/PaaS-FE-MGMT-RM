@@ -39,17 +39,17 @@ public class PcComputerPeerImpl implements PcComputerPeer{
 		return pcComputerSvc.removeById(id);
 	}
 
-	@Override
+//	@Override
 	public List<PcComputerTag> queryComputerTagList(Long computerId,String orders) {
 		return pcComputerSvc.queryComputerTagList(computerId, orders);
 	}
 
-	@Override
+//	@Override
 	public void saveComputerTags(Long computerId, List<PcComputerTag> tags) {
 		pcComputerSvc.saveComputerTags(computerId, tags);
 	}
 
-	@Override
+//	@Override
 	public void removeComputerTags(Long computerId) {
 		pcComputerSvc.removeComputerTags(computerId);
 	}
